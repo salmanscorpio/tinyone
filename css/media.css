@@ -1,0 +1,212 @@
+/* =========================
+   MEDIA QUERIES
+========================= */
+
+/* -------- Extra Small Devices: up to 400px -------- */
+@media (max-width: 400px) {
+  .hero-section {
+    padding-bottom: 180px;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p.lead {
+    font-size: 0.95rem;
+  }
+
+  .newsletter h2 {
+    font-size: 1.4rem;
+  }
+
+  .newsletter p {
+    font-size: 0.75rem;
+  }
+}
+
+/* -------- Mobile: up to 575px -------- */
+@media (max-width: 575.98px) {
+  .hero-section {
+    padding: 60px 15px 160px;
+  }
+
+  .hero-content {
+    text-align: center;
+    position: relative;
+    z-index: 5;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p.lead {
+    font-size: 1rem;
+  }
+
+  .hero-platforms {
+    justify-content: center !important;
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .btn-hero {
+    width: 90%;
+    max-width: 250px;
+    margin: 10px auto 0 auto;
+    display: block;
+    padding: 12px 0;
+    font-size: 1rem;
+  }
+
+  .carousel-indicators {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+
+  .carousel-item img {
+    max-width: 80%;
+    margin: 0 auto 20px;
+  }
+
+  .feature-box {
+    margin-bottom: 20px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .newsletter-form .form-control {
+    width: 100% !important;
+    max-width: 300px;
+    margin-bottom: 10px;
+  }
+
+  .newsletter-form .btn {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+/* -------- Small Tablets: 576px - 767px -------- */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .hero-section {
+    padding: 80px 20px 160px;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p.lead {
+    font-size: 1.1rem;
+  }
+
+  .btn-hero {
+    width: 80%;
+    max-width: 250px;
+    margin: 12px auto 0 auto;
+  }
+
+  .carousel-item img {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .carousel-indicators {
+    bottom: 15px;
+  }
+}
+
+/* -------- Medium Devices: 768px - 991px -------- */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .hero-section {
+    padding: 90px 25px 140px;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2.7rem;
+  }
+
+  .hero-content p.lead {
+    font-size: 1.15rem;
+  }
+
+  .btn-hero {
+    width: auto;
+    padding: 12px 30px;
+    display: inline-block;
+    margin-top: 15px;
+  }
+
+  .carousel-item img {
+    max-width: 100%;
+  }
+
+  .carousel-indicators {
+    bottom: 20px;
+  }
+}
+
+/* -------- Newsletter & Footer Adjustments for Tablets & Mobiles -------- */
+@media (max-width: 991.98px) {
+  .newsletter h2 {
+    font-size: 1.5rem;
+  }
+
+  .newsletter p {
+    font-size: 0.8rem;
+  }
+}
+
+
+/* Body padding so fixed navbar doesn't hide content */
+body {
+    padding-top: 80px; /* adjust if navbar height changes */
+}
+
+/* Ensure navbar stays on top */
+.navbar.fixed-top.custom-nav {
+    z-index: 1050;
+}
+
+/* Mobile collapse menu visibility */
+.navbar-collapse {
+    overflow: visible !important;
+    background-color: #F1B608; /* optional: match navbar bg on mobile */
+    padding: 15px 0; /* spacing for links */
+}
+
+/* Smooth collapse animation */
+.navbar-collapse.collapse {
+    transition: height 0.35s ease;
+}
+
+/* Mobile link adjustments */
+@media (max-width: 991.98px) {
+    .navbar-nav .nav-link {
+        padding: 12px 0;
+        font-size: 1rem;
+    }
+}
+
+/* =========================
+   MOBILE/TABLET LINK HOVER CLARITY
+========================= */
+.navbar-collapse .nav-link:hover {
+    background-color: rgba(0,0,0,0.05);
+    border-radius: 5px;
+}

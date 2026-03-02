@@ -1,0 +1,312 @@
+/* =========================
+   CUSTOM FONTS
+========================= */
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../fonts/HelveticaNeue-Bold.ttf') format('ttf');
+    font-weight: 700;
+}
+
+.pt-sans-regular {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pt-sans-bold {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+/* =========================
+   GENERAL STYLING
+========================= */
+body, h1, h2, h5, p, a {
+  font-family: 'PT Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+a { text-decoration: none; }
+img { max-width: 100%; height: auto; }
+
+/* Colors */
+
+.text-yellow { 
+  color: #F1B608; 
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.custom-nav {
+  background-color: #F1B608;
+  padding: 1rem 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link {
+  font-family: 'HelveticaNeue', sans-serif;
+  color: #030303;
+  font-weight: 700;
+  margin-left: 1.2rem;
+  position: relative;
+  padding: 6px 0;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover underline effect */
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 0;
+  height: 3px;
+  background-color: #000;
+  border-radius: 5px;
+  transform: translateX(-50%);
+  transition: width 0.35s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #000;
+  transform: translateY(-2px);
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar-nav .nav-link.active {
+  color: #000;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero-section {
+  background-color: #F1B608;
+  padding: 100px 0 80px;
+}
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: 'PT Sans', sans-serif;
+  color: #030303;
+}
+.hero-section p.lead { 
+  font-size: 1.2rem; 
+  margin-top: 1rem; 
+  color: #111; 
+}
+.hero-platforms i {
+  color: #000;
+  transition: transform 0.3s, color 0.3s;
+}
+.hero-platforms i:hover { 
+  transform: scale(1.2); color: #fff; 
+}
+
+/* Buttons */
+.btn-hero {
+  background: linear-gradient(135deg, #f1b608, #fcdb00);
+  border: none;
+  color: #030303;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+.btn-hero:hover {
+  color: #d9dc52;
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   FEATURES SECTION
+========================= */
+.features-section { 
+  background-color: #FAFEFF; 
+  padding: 80px 0; 
+  text-align: center; 
+}
+
+.features-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  font-family: 'PT Sans', sans-serif;
+  color: #030303;
+}
+
+.features-section p {
+  color: #555;
+  margin-bottom: 3rem;
+}
+
+/* Feature Box */
+.feature-box {
+  padding: 30px 15px;
+  border-radius: 10px;
+  background-color: #FAFEFF;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer; /* indicates interactivity */
+}
+
+/* Pop-up Hover: entire box lifts slightly */
+.feature-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+/* Feature Icon */
+.feature-box i.bi {
+  font-size: 3rem;
+  color: #fcdb00;
+  transition: transform 0.3s ease, color 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Icon scales with box on hover */
+.feature-box:hover i.bi {
+  transform: scale(1.3); /* pop up effect */
+  color: #ffea00;        /* slightly brighter gold */
+}
+
+/* Feature Titles & Paragraphs pop slightly */
+.feature-box h5 {
+  margin-top: 15px; 
+  font-weight: 600; 
+  color: #030303; 
+  transition: transform 0.3s ease;
+}
+
+.feature-box p { 
+  color: #555; 
+  transition: transform 0.3s ease;
+}
+
+/* Titles and description pop slightly with icon */
+.feature-box:hover h5,
+.feature-box:hover p {
+  transform: translateY(-3px);
+}
+
+
+/* =========================
+   NEWSLETTER SECTION
+========================= */
+.newsletter {
+  background: #030303;
+  color: #F1B608;
+  padding: 60px 0;
+}
+
+.newsletter h2 {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.newsletter p { 
+  font-size: 0.85rem; 
+  color: #c7c0c0; 
+}
+
+/* =========================
+   EMAIL INPUT AND BUTTON
+========================= */
+.newsletter-form .form-control {
+  min-width: 260px;
+  border-radius: 30px;
+  border: none;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  background-color: #cbc9c9; 
+  color: #fefefe;
+}
+
+/* Hover Effect for Email Input */
+.newsletter-form .form-control:hover {
+  box-shadow: 0 0 8px rgba(233, 184, 35, 0.4);
+  background-color: #d99c4c;
+  transform: translateY(-2px);
+}
+
+/* Focus Effect */
+.newsletter-form .form-control:focus {
+  box-shadow: 0 0 12px rgba(255, 192, 3, 0.6);
+  background-color: #1a1a1a;
+  border-color: transparent;
+  outline: none;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.newsletter-form .btn {
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  background-color: #F1B608;
+  color: #030303;
+  font-weight: 700;
+}
+
+/* Hover Glow for Button */
+.newsletter-form .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 
+    0 8px 20px rgba(0, 0, 0, 0.12),
+    0 0 15px rgba(241, 182, 8, 0.6),
+    0 0 30px rgba(241, 182, 8, 0.4);
+}
+
+
+/* =========================
+   SOCIAL ICONS
+========================= */
+.newsletter-social a {
+  transition: transform 0.3s, color 0.3s;
+}
+
+.newsletter-social a:hover {
+  transform: scale(1.2);
+  color: #fff !important;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  
+  background:#030303;
+  color: #FAFEFF;
+  font-size: 0.75rem;
+  padding: 40px 0;
+}
+footer h4 {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  color: #FAFEFF;
+  font-family: 'PT Sans', sans-serif;
+}
+footer a { 
+  color: #FAFEFF; 
+  transition: color 0.3s; }
+footer a:hover { color: #F1B608; }
+
+.text-center.py-3 {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 900;
+}
+
+/* =========================
+   CAROUSEL IMAGE FIX
+========================= */
+.carousel-item img { max-width: 100%; height: auto; display:block; margin:0 auto; }
